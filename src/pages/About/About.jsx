@@ -4,7 +4,7 @@ import HeroImg from "@/assets/images/me.jpg";
 export default function About() {
   return (
     <>
-      <section id="about" className="py-16 md:py-32  text-white bg-[#04081A]">
+      <section id="about" className="py-16 md:py-32  text-white bg-deepSpace">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
           <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
             Developer, Creator
@@ -25,37 +25,31 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello! I'm Rohit Neogi, a passionate full-stack developer with a
-                strong foundation in JavaScript, Python, and modern web
-                technologies.{" "}
-                <span className="font-bold text-white">
-                  With hands-on experience in building scalable applications
-                  using React.js, Node.js, and Django,
-                </span>{" "}
-                I specialize in crafting data-driven, responsive interfaces and
-                seamless user experiences. I’ve worked on impactful projects
-                like MarketMind AI and Macro, and currently contribute as a
-                Software Development Engineer Intern at IEMA R&D, focusing on
-                robust web applications and innovative solutions.
-              </p>
-
-              <p className="text-white">
-  My focus is on building efficient, scalable, and accessible web applications using modern technologies like React.js, Node.js, and Django. Currently, I'm deepening my expertise in backend development and database management with tools like MongoDB and Django REST Framework, aiming to grow as a versatile full-stack developer capable of delivering end-to-end solutions.
+  Hi! I'm Rohit Neogi, a full-stack developer skilled in JavaScript, Python, React, Node.js, and Django. I build scalable, data-driven web apps focused on clean UI and user experience. Currently, I’m a Software Development Engineer Intern at IEMA R&D, working on projects like MarketMind AI, Macro, and developing the IEMEDU.in website using the MERN stack.
 </p>
 
+
+              <p className="text-white">
+                I build scalable, accessible web apps using React, Node.js, and
+                Django. I'm currently focused on backend development and
+                databases like MongoDB and Django REST to grow as a full-stack
+                developer.
+              </p>
 
               <div className="pt-6">
                 <blockquote className="border-l-4 border-gray-300 pl-4">
                   <p className="text-white">
-  I'm a lifelong learner and developer, driven by curiosity and a commitment to solving real-world problems through technology. From building IoT-based pollution monitoring systems to developing AI-powered stock analysis platforms, I strive to contribute meaningful solutions to the tech community. Through my projects like Macro and MarketMind AI, I aim to innovate and empower developers with tools that blend performance, usability, and modern design.
-</p>
-
+                    I'm a passionate developer and lifelong learner, building
+                    tech solutions from IoT pollution monitors to AI stock
+                    analysis tools. Through projects like Macro and MarketMind
+                    AI, I aim to create meaningful, modern, and impactful
+                    technology.
+                  </p>
 
                   <div className="mt-6 space-y-3">
                     <cite className="block font-medium text-white">
                       Rohit Neogi
                     </cite>
-                    
                   </div>
                 </blockquote>
               </div>
