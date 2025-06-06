@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+         deepSpace: 'radial-gradient(circle, #030c1a, #051123, #06152c, #041935, #041c3f)',
+      },
       animation: {
         meteor: "meteor 5s linear infinite",
       },

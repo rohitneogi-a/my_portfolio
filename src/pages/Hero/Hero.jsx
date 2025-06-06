@@ -135,7 +135,7 @@ const profile = {
 
   return (
     <>
-      <main className="bg-[#020617] text-white min-h-screen">
+      <main className="bg-deepSpace text-white min-h-screen">
         <section
           className="hero min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-0 hero-section-padding"
           style={{ paddingTop: "var(--hero-padding-top, 0)" }}
@@ -185,14 +185,14 @@ const profile = {
               {/* Name section */}
               <div className="relative mb-6 sm:mb-8">
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-white">
-  <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">
+  <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">
     Hello
   </span>
   <br />
-  <span className="relative inline-block ml-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+  <span className="relative inline-block ml-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
     I'm
     
-    <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">
+    <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">
   {" "}Rohit Neogi
 </span>
 
@@ -280,7 +280,7 @@ const profile = {
                     <div className="window-dot bg-green-500"></div>
                     <span className="ml-2 text-sm text-gray-400 flex items-center gap-2">
                       <i className="fas fa-code"></i>
-                      developer.js
+                      codeXrohit.js
                     </span>
                   </div>
                   <pre className="language-javascript">
