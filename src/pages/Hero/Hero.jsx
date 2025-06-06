@@ -44,7 +44,7 @@ export default function Hero() {
   const words = [
     "Full-Stack Developer & ML Enthusiast",
     "JavaScript Developer ",
-    "Learning MARN Stack",
+    "MERN Stack",
     "Linux & GitHub for DevOps Enthusiast",
   ];
 
@@ -53,18 +53,20 @@ const profile = {
     name: 'Rohit Neogi',
     title: 'Full-Stack Developer | ML Enthusiast | Problem Solver',
     skills: [
-        'React', 'NextJS', 'Express', 'MongoDB','Node JS' 'Git', 'Linux', 'Discord Development'
+        'React', 'NextJS', 'Express', 'MongoDB','Node JS' 
+        'Git', 'Linux', 'Discord Development'
     ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 4, 
+    yearsOfExperience: 0, 
     hireable: function() {
         return (
             this.hardWorker &&
             this.problemSolver &&
-            this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.quickLearner &&
+            this.skills.length > 0 &&
+            this.yearsOfExperience >= 0
         );
     }
 };
@@ -182,16 +184,21 @@ const profile = {
 
               {/* Name section */}
               <div className="relative mb-6 sm:mb-8">
-                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
-                  <SparklesText text="Hello" />
-                  <span className="relative inline-block">
-                    I&apos;m
-                    <span className="typing-effect gradient-text">
-                      {" "}
-                      Rohit Neogi
-                    </span>
-                  </span>
-                </h1>
+                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-white">
+  <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">
+    Hello
+  </span>
+  <br />
+  <span className="relative inline-block ml-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+    I'm
+    
+    <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">
+  {" "}Rohit Neogi
+</span>
+
+  </span>
+</h1>
+
                 <div className="absolute -z-10 top-1/2 -translate-y-1/2 left-1/4 w-24 sm:w-32 h-24 sm:h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
               </div>
 
@@ -208,17 +215,18 @@ const profile = {
 
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
-                <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 |  🔧 | 
-                  and coding the future 💻✨
-                </p>
-              </div>
+  <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
+    JavaScript lover 🚀 | ML Enthusiast 🔧 | System Design Learner 🧠 | 
+    coding the future 💻✨
+  </p>
+</div>
+
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
                 {/* View Projects Button */}
                 <a
-                  href="https://github.com/seraprogrammer"
+                  href="https://github.com/rohit-2604"
                   className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
@@ -244,7 +252,7 @@ const profile = {
               </div>
 
               {/* Floating badges */}
-              <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
+              {/* <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
                 <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
                   <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI
                   Magic
@@ -259,7 +267,7 @@ const profile = {
                 <div className="px-4 py-2 rounded-lg bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 text-amber-400">
                   <i className="fas fa-lightbulb"></i>&nbsp;&nbsp;Innovation
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right column - Code window */}
