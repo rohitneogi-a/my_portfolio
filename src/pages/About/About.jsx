@@ -1,5 +1,5 @@
-import HeroImg from "@/assets/images/hero.jpg";
-import OlovaLogo from "@/assets/images/olova.png";
+// import HeroImg from "@/assets/images/hero.jpg";
+// import OlovaLogo from "@/assets/images/olova.png";
 
 export default function About() {
   return (
@@ -13,7 +13,8 @@ export default function About() {
             <div className="relative mb-6 sm:mb-0">
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
                 <img
-                  src={HeroImg}
+                  src="https://res.cloudinary.com/dzj3q1x8h/image/upload/v1738888850/olovajs/hero.jpg"
+                  loading="lazy"
                   className="rounded-[15px] shadow block"
                   alt="payments illustration"
                   width={1207}
@@ -24,7 +25,7 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello! I'm Nazmul Hossain, a passionate JavaScript developer
+                Hello! I'm Rohit Neogi, a passionate JavaScript developer
                 specializing in creating innovative web solutions and
                 user-friendly interfaces.{" "}
                 <span className="font-bold text-white">
@@ -56,7 +57,8 @@ export default function About() {
                     <div className="flex items-center gap-2">
                       <img
                         className="h-5 w-fit"
-                        src={OlovaLogo}
+                        src= "https://res.cloudinary.com/dzj3q1x8h/image/upload/v1738888850/olovajs/olova.png"
+                        loading="lazy"
                         alt="Olova Logo"
                         height="20"
                         width="auto"
