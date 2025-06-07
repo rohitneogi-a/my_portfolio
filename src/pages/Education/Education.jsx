@@ -13,28 +13,29 @@ import { motion } from "framer-motion";
 const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  const educationData = [
-    {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
-      mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
-      description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
-    },
-    {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
-      description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
-    },
-  ];
+const educationData = [
+  {
+    degree: "Bachelor of Science in Computer Science (B.Sc)",
+    school: "Gour Mahavidyalaya",
+    mascot: "🎓",
+    year: "2020–2023",
+    achievements: ["Successfully completed with strong academic performance"],
+    skills: ["C++", "Data Structures", "OOP", "DBMS"],
+    description:
+      "Built a solid foundation in computer science fundamentals, including data structures, algorithms, and programming with C++ and Python. Completed academic projects involving IoT and machine learning.",
+  },
+  {
+    degree: "Master of Computer Application (MCA)",
+    school: "University of Engineering & Management (UEM), Kolkata",
+    mascot: "📘",
+    year: "2023–Present",
+    achievements: ["Ongoing - Actively learning advanced software engineering"],
+    skills: ["Full Stack Development", "MERN Stack", "Django", "Git"],
+    description:
+      "Pursuing MCA with a focus on web development, database systems, and modern frameworks. Engaged in impactful projects combining React, Django, and machine learning APIs.",
+  },
+];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },

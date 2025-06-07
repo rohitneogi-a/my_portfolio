@@ -18,7 +18,7 @@ const ExperienceCard = ({
     <div className="relative bg-gray-900/90 rounded-lg p-8 h-full border border-gray-800/50 shadow-xl backdrop-blur-xl">
       {/* Floating icon with pulse effect */}
       <div className="relative mb-6">
-        <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-25 rounded-full blur-xl group-hover:opacity-75 animate-pulse transition-all duration-500" />
+        <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 via-indigo-500 to-blue-600 opacity-20 rounded-full blur-xl   " />
         <Icon className="w-12 h-12 text-cyan-400 relative z-10 transform group-hover:rotate-12 transition-transform duration-300" />
       </div>
 
@@ -53,29 +53,14 @@ const ExperienceCard = ({
 
 const ExperienceSection = () => {
   const experiences = [
-    {
-      icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
-      description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
-    },
-    {
-      icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
-      description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
-    },
+   
     {
       icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
-      period: "2023 - Present",
+      title: "MERN Stack Developer",
+      company: "IEMA RESEARCH & DEVELOPMENT PVT. LTD.",
+      period: "2024 - Present",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Currently working as a Software Development Engineer Intern, focusing on building scalable web applications using the MERN stack. Involved in projects like MarketMind AI and Macro, enhancing my skills in full-stack development.",
     },
   ];
 
@@ -89,7 +74,7 @@ const ExperienceSection = () => {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(50,50,70,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(50,50,70,0.15)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_70%,transparent_100%)]" />
 
         {/* Animated particles */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 justify-center items-center pointer-events-none">
           {[...Array(20)].map((_, i) => (
             <div
               key={i}
@@ -119,11 +104,14 @@ const ExperienceSection = () => {
           </div>
 
           {/* Experience grid with improved layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-            {experiences.map((exp, index) => (
-              <ExperienceCard key={index} {...exp} />
-            ))}
-          </div>
+          <div className="flex justify-center items-center">
+  <div className="max-w-xl w-full">
+    {experiences.map((exp, index) => (
+      <ExperienceCard key={index} {...exp} />
+    ))}
+  </div>
+</div>
+
         </div>
 
         {/* Enhanced background effects */}

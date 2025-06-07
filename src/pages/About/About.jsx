@@ -25,9 +25,14 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-  Hi! I'm Rohit Neogi, a full-stack developer skilled in JavaScript, Python, React, Node.js, and Django. I build scalable, data-driven web apps focused on clean UI and user experience. Currently, I’m a Software Development Engineer Intern at IEMA R&D, working on projects like MarketMind AI, Macro, and developing the IEMEDU.in website using the MERN stack.
-</p>
-
+                Hi! I'm Rohit Neogi, a full-stack developer skilled in
+                JavaScript, Python, React, Node.js, and Django. I build
+                scalable, data-driven web apps focused on clean UI and user
+                experience. Currently, I’m a Software Development Engineer
+                Intern at IEMA R&D, working on projects like MarketMind AI,
+                Macro, and developing the IEMEDU.in website using the MERN
+                stack.
+              </p>
 
               <p className="text-white">
                 I build scalable, accessible web apps using React, Node.js, and

@@ -5,46 +5,40 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "📈 MarketMind AI",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
-    src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
-    color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+      "A full-stack stock prediction platform using Django REST, React + TypeScript, XGBoost, and financial APIs. Includes technical indicators (SMA, EMA, RSI) and integrates Google Gemini API for sentiment analysis.",
+    src: "market.jpg",
+    link: "https://postimage.me/images/2025/06/07/ChatGPT-Image-Jun-7-2025-10_12_32-PM-1.png",
+    color: "#4ade80",
+    githubLinks: [
+      { label: "Frontend", url: "https://github.com/rohitneogi-a/MarketAI_front" },
+      { label: "Backend", url: "https://github.com/rohitneogi-a/MarketAI_back" }
+    ],
+    // liveLink: "https://marketmindai.vercel.app"
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
+    title: "🔐 Macro Auth System",
     description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
-    src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+      "An advanced authentication system with Google OAuth, modern UI, and secure multi-layered login & signup flows. Built using React and Tailwind CSS.",
+    src: "macro.jpg",
+    link: "https://postimage.me/images/2025/06/07/fail-but-never-quit-failure-never-give-up-motivational-3840x2160-7693.jpg",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "https://github.com/coderohit-dev/MACRO_FRONTEND",
+    // liveLink: "https://macro-auth.vercel.app"
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "🌫️ Air Pollution Monitoring IoT",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
-    color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
-  },
-  {
-    title: "CodeKori 🔥",
-    description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
-    color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
-  },
+      "IoT + Python project that monitors real-time air quality using sensors and predicts pollution trends using machine learning models.",
+    src: "iot.jpg",
+    link: "https://postimage.me/images/2025/06/07/ChatGPT-Image-Jun-7-2025-10_03_08-PM-1.png",
+    color: "#60a5fa",
+    githubLink: "https://github.com/rohit-2604/ProJect_BSC",
+    // liveLink: "https://iot-air.vercel.app"
+  }
 ];
+
 
 export default function Projects() {
   const container = useRef(null);
@@ -105,18 +99,20 @@ export default function Projects() {
             const targetScale = 1 - (projects.length - i) * 0.05;
             return (
               <Card
-                key={`p_${i}`}
-                i={i}
-                url={project.link}
-                title={project.title}
-                color={project.color}
-                description={project.description}
-                progress={scrollYProgress}
-                range={[i * 0.25, 1]}
-                targetScale={targetScale}
-                githubLink={project.githubLink}
-                liveLink={project.liveLink}
-              />
+  key={`p_${i}`}
+  i={i}
+  url={project.link}
+  title={project.title}
+  color={project.color}
+  description={project.description}
+  progress={scrollYProgress}
+  range={[i * 0.25, 1]}
+  targetScale={targetScale}
+  githubLink={project.githubLink}
+  githubLinks={project.githubLinks}
+  liveLink={project.liveLink}
+/>
+
             );
           })}
         </section>
@@ -136,6 +132,7 @@ function Card({
   targetScale,
   githubLink,
   liveLink,
+  githubLinks,
 }) {
   const container = useRef(null);
   const scale = useTransform(progress, range, [1, targetScale]);
@@ -209,67 +206,103 @@ function Card({
               <div className="w-full h-[1px] bg-gray-800 mb-4 md:mb-6" />
 
               <div className="flex items-center gap-4">
-                {/* GitHub Link */}
-                <motion.a
-                  href={githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2"
-                  whileHover={{ y: -3 }}
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={color}
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                {/* GitHub Links */}
+                {githubLinks && Array.isArray(githubLinks) ? (
+                  githubLinks.map((link, idx) => (
+                    <motion.a
+                      key={idx}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-2"
+                      whileHover={{ y: -3 }}
+                      transition={{ type: "spring", stiffness: 400 }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke={color}
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                      </svg>
+                      <span
+                        className="text-xs md:text-sm font-medium"
+                        style={{ color }}
+                      >
+                        {link.label || "Code"}
+                      </span>
+                    </motion.a>
+                  ))
+                ) : githubLink ? (
+                  <motion.a
+                    href={githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2"
+                    whileHover={{ y: -3 }}
+                    transition={{ type: "spring", stiffness: 400 }}
                   >
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                  <span
-                    className="text-xs md:text-sm font-medium"
-                    style={{ color }}
-                  >
-                    Code
-                  </span>
-                </motion.a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke={color}
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span
+                      className="text-xs md:text-sm font-medium"
+                      style={{ color }}
+                    >
+                      Code
+                    </span>
+                  </motion.a>
+                ) : null}
 
                 {/* Live Link */}
-                <motion.a
-                  href={liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2"
-                  whileHover={{ y: -3 }}
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={color}
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                {liveLink && (
+                  <motion.a
+                    href={liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2"
+                    whileHover={{ y: -3 }}
+                    transition={{ type: "spring", stiffness: 400 }}
                   >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                  <span
-                    className="text-xs md:text-sm font-medium"
-                    style={{ color }}
-                  >
-                    Live
-                  </span>
-                </motion.a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke={color}
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span
+                      className="text-xs md:text-sm font-medium"
+                      style={{ color }}
+                    >
+                      Live
+                    </span>
+                  </motion.a>
+                )}
               </div>
             </div>
           </div>
@@ -289,6 +322,7 @@ Card.propTypes = {
   progress: PropTypes.object.isRequired,
   range: PropTypes.array.isRequired,
   targetScale: PropTypes.number.isRequired,
-  githubLink: PropTypes.string.isRequired,
-  liveLink: PropTypes.string.isRequired,
+  githubLink: PropTypes.string,
+  githubLinks: PropTypes.array,
+  liveLink: PropTypes.string,
 };
