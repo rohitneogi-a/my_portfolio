@@ -26,6 +26,12 @@ export default function Header() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Add this useEffect to sync activeLink with route changes
+  useEffect(() => {
+    const path = location.pathname.substring(1) || "home";
+    setActiveLink(path);
+  }, [location.pathname]);
+
   const navLinks = [
     { id: "home", icon: FaHome, text: "Home", path: "/" },
     { id: "skills", icon: FaCode, text: "Skills", path: "/skills" },
@@ -42,7 +48,7 @@ export default function Header() {
       path: "/education",
     },
     { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
-    { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" },
+    // { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" },
   ];
 
   return (

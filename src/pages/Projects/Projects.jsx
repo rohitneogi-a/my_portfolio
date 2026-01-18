@@ -9,7 +9,7 @@ const projects = [
     description:
       "A full-stack stock prediction platform using Django REST, React + TypeScript, XGBoost, and financial APIs. Includes technical indicators (SMA, EMA, RSI) and integrates Google Gemini API for sentiment analysis.",
     src: "market.jpg",
-    link: "https://postimage.me/images/2025/06/07/ChatGPT-Image-Jun-7-2025-10_12_32-PM-1.png",
+    link: "/marketmindai.png",
     color: "#4ade80",
     githubLinks: [
       { label: "Frontend", url: "https://github.com/rohitneogi-a/MarketAI_front" },
@@ -22,7 +22,7 @@ const projects = [
     description:
       "An advanced authentication system with Google OAuth, modern UI, and secure multi-layered login & signup flows. Built using React and Tailwind CSS.",
     src: "macro.jpg",
-    link: "https://postimage.me/images/2025/06/07/fail-but-never-quit-failure-never-give-up-motivational-3840x2160-7693.jpg",
+    link: "/macro.png",
     color: "#8f89ff",
     githubLink: "https://github.com/coderohit-dev/MACRO_FRONTEND",
     // liveLink: "https://macro-auth.vercel.app"
@@ -32,7 +32,7 @@ const projects = [
     description:
       "IoT + Python project that monitors real-time air quality using sensors and predicts pollution trends using machine learning models.",
     src: "iot.jpg",
-    link: "https://postimage.me/images/2025/06/07/ChatGPT-Image-Jun-7-2025-10_03_08-PM-1.png",
+    link: "/airiot.png",
     color: "#60a5fa",
     githubLink: "https://github.com/rohit-2604/ProJect_BSC",
     // liveLink: "https://iot-air.vercel.app"
@@ -158,7 +158,7 @@ function Card({
         {/* Modern split card design */}
         <div className="w-full flex flex-col md:flex-row bg-zinc-900 rounded-2xl overflow-hidden shadow-xl">
           {/* Image section - full width on mobile, 55% on desktop */}
-          <div className="w-full md:w-[55%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
+          <div className="w-full md:w-[110%] h-[250px] md:h-[400px] lg:h-[450px] relative overflow-hidden">
             <motion.img
               src={url}
               alt={title}

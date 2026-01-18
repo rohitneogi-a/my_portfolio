@@ -232,7 +232,7 @@ const profile = {
                 </a>
 
                 {/* Contact Button */}
-                <a
+                {/* <a
                   href="https://drive.google.com/file/d/1eMgKCQJgC_q4k_sYuQY5E-1j4LbFXhUs/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -244,7 +244,7 @@ const profile = {
                       <i className="fas fa-envelope transform transition-all duration-300 group-hover:rotate-12"></i>
                     </span>
                   </span>
-                </a>
+                </a> */}
               </div>
 
               {/* Floating badges */}
