@@ -45,7 +45,7 @@ export default function Hero() {
     "Full-Stack Developer & ML Enthusiast",
     "JavaScript Developer ",
     "MERN Stack",
-    "Systems @ scale Learner",
+    "Systems @ scale Learner ",
     "Linux & GitHub for DevOps Enthusiast",
   ];
 
