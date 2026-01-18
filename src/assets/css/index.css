@@ -218,3 +218,29 @@ pre[class*="language-"] {
   background-color: white;
   opacity: 0.8; /* Make it more visible */
 }
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400; /* change as needed */
+  font-style: normal;
+}
+
+.jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* change as needed */
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* change as needed */
+  font-style: normal;
+}

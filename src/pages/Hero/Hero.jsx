@@ -178,7 +178,7 @@ const profile = {
 
               {/* Name section */}
               <div className="relative mb-6 sm:mb-8 mt-5 ">
-                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-white">
+                <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-white lexend">
                   <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">
                     Hello
                   </span>
@@ -200,7 +200,7 @@ const profile = {
                 <i className="fas fa-rocket text-blue-400 animate-bounce text-sm sm:text-base"></i>
                 <span>
                   <FlipWords
-                    className={"text-lg sm:text-xl text-blue-400 font-medium"}
+                    className={"text-lg sm:text-xl text-blue-400 font-medium jetbrains-mono"}
                     words={words}
                   />
                 </span>
@@ -208,7 +208,7 @@ const profile = {
 
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
-                <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
+                <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed jetbrains-mono">
                   JavaScript lover 🚀 | ML Enthusiast 🔧 | System Design Learner
                   🧠 | coding the future 💻✨
                 </p>
@@ -224,7 +224,7 @@ const profile = {
                   className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-indigo-500 via-sky-400 to-emerald-300 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
-                    <span className="relative flex items-center justify-center gap-2 text-white font-medium">
+                    <span className="relative flex items-center justify-center gap-2 text-white font-medium jetbrains-mono">
                       <span>Learn More</span>
                       <i className="fas fa-arrow-right transform transition-all duration-300 group-hover:translate-x-1"></i>
                     </span>

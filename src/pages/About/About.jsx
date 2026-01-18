@@ -1,12 +1,12 @@
 import HeroImg from "@/assets/images/me.jpg";
-// import OlovaLogo from "@/assets/images/olova.png";
+
 
 export default function About() {
   return (
     <>
       <section id="about" className="py-16 md:py-32  text-white bg-deepSpace">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-          <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
+          <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white lexend">
             Developer, Creator
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
@@ -24,7 +24,7 @@ export default function About() {
             </div>
 
             <div className="relative space-y-4">
-              <p className="text-white">
+              <p className="text-white jetbrains-mono">
                 Hi! I'm Rohit Neogi, a full-stack developer skilled in
                 JavaScript, Python, React, Node.js, and Django. I build
                 scalable, data-driven web apps focused on clean UI and user
@@ -34,7 +34,7 @@ export default function About() {
                 stack.
               </p>
 
-              <p className="text-white">
+              <p className="text-white jetbrains-mono">
                 I build scalable, accessible web apps using React, Node.js, and
                 Django. I'm currently focused on backend development and
                 databases like MongoDB and Django REST to grow as a full-stack
@@ -43,7 +43,7 @@ export default function About() {
 
               <div className="pt-6">
                 <blockquote className="border-l-4 border-gray-300 pl-4">
-                  <p className="text-white">
+                  <p className="text-white playfair-display">
                     I'm a passionate developer and lifelong learner, building
                     tech solutions from IoT pollution monitors to AI stock
                     analysis tools. Through projects like Macro and MarketMind
