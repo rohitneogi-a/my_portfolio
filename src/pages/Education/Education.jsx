@@ -24,16 +24,20 @@ const educationData = [
     description:
       "Built a solid foundation in computer science fundamentals, including data structures, algorithms, and programming with C++ and Python. Completed academic projects involving IoT and machine learning.",
   },
-  {
-    degree: "Master of Computer Application (MCA)",
-    school: "University of Engineering & Management (UEM), Kolkata",
-    mascot: "📘",
-    year: "2023–Present",
-    achievements: ["Ongoing - Actively learning advanced software engineering"],
-    skills: ["Full Stack Development", "MERN Stack", "Django", "Git"],
-    description:
-      "Pursuing MCA with a focus on web development, database systems, and modern frameworks. Engaged in impactful projects combining React, Django, and machine learning APIs.",
-  },
+{
+  "degree": "Master of Computer Application (MCA)",
+  "school": "University of Engineering & Management (UEM), Kolkata",
+  "mascot": "🎓",
+  "year": "2023–2025",
+  "achievements": [
+    "Completed advanced software engineering coursework",
+    "Third position in Project Competition 2023 (1st year)"
+  ],
+  "skills": ["Full Stack Development", "MERN Stack", "Django", "Git"],
+  "description": "Pursuing MCA with a focus on web development, database systems, and modern frameworks. Engaged in impactful projects combining React, Django, and machine learning APIs."
+}
+
+
 ];
 
 

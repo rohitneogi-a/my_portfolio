@@ -54,14 +54,25 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
    
-    {
-      icon: Code2,
-      title: "MERN Stack Developer",
-      company: "IEMA RESEARCH & DEVELOPMENT PVT. LTD.",
-      period: "2024 - Present",
-      description:
-        "Currently working as a Software Development Engineer Intern, focusing on building scalable web applications using the MERN stack. Involved in projects like MarketMind AI and Macro, enhancing my skills in full-stack development.",
-    },
+{
+  icon: Code2,
+  title: "Software Development Engineer L1 (SDE-L1)",
+  company: "IEMA RESEARCH & DEVELOPMENT PVT. LTD.",
+  period: "Sep 2025 - Present",
+  description:
+    "Promoted from Software Development Engineer Intern to SDE-L1. Developing and maintaining scalable full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), Git & GitHub for version control, and Linux for deployment and server management. Improved application performance by 20% and optimized code quality by implementing best practices, automated scripts, and efficient workflows.",
+},
+{
+  icon: Code2,
+  title: "Software Development Engineer Intern",
+  company: "IEMA RESEARCH & DEVELOPMENT PVT. LTD.",
+  period: "2024 - Aug 2025",
+  description:
+    "Worked as a full-stack developer intern building web applications with the MERN stack. Gained hands-on experience in Linux, Git & GitHub, and end-to-end development. Contributed to increasing application efficiency by 15% and reducing deployment errors through streamlined workflows.",
+},
+
+
+
   ];
 
   return (
