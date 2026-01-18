@@ -177,7 +177,7 @@ const profile = {
               {/* Welcome badge */}
 
               {/* Name section */}
-              <div className="relative mb-6 sm:mb-8">
+              <div className="relative mb-6 sm:mb-8 mt-5 ">
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight text-white">
                   <span className="typing-effect gradient-text drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">
                     Hello
